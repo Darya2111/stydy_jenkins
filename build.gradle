@@ -48,4 +48,11 @@ tasks.withType(Test) {
             exceptionFormat "short"
         }
     }
+
+}
+task demoqa_tests(type: Test) {
+    useJUnitPlatform{
+        includeTags "demoqa"
+//        excludeTags "simple"
+    }
 }
